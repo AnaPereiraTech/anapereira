@@ -299,7 +299,7 @@ input, textarea {
 
     /* 2. Ajuste da Navbar */
     .navbar {
-        padding: 20px 5%;
+        padding: 8px 5%;
         flex-direction: column; /* Coloca o menu abaixo da logo */
         gap: 15px;
     }
