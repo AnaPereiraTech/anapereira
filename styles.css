@@ -377,7 +377,7 @@ p {
 
     /* 2. Ajuste da Navbar */
     .navbar {
-        padding: 20px 5%;
+        padding: 10px 5%;
         flex-direction: column; /* Coloca o menu abaixo da logo */
         gap: 15px;
     }
