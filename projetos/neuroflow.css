@@ -249,26 +249,65 @@ p {
   color: white;
 }
 /* Para telas menores que 768px (Celulares) */
-@media (max-width: 768px) {
+/* Responsividade para telas de 360px */
+@media (max-width: 360px) {
     
-    /* Faz o formulário e contatos ficarem um embaixo do outro */
-    .contato-container {
-        flex-direction: column;
-        gap: 40px;
+    /* 1. Ajuste geral de margens e padding */
+    body {
+        margin: 5px; /* Menos margem para aproveitar o espaço */
+    }
+
+    /* 2. Ajuste da Navbar */
+    .navbar {
         padding: 20px 5%;
+        flex-direction: column; /* Coloca o menu abaixo da logo */
+        gap: 15px;
     }
 
-    /* Ajusta o vídeo e o texto das páginas de projeto */
-    .conteudo-projeto {
+    .navbar ul {
+        gap: 15px; /* Menor espaço entre itens do menu */
+    }
+
+    .navbar ul li a {
+        font-size: 1rem; /* Fonte um pouco menor */
+    }
+
+    /* 3. Ajuste do Container de Contato */
+    .contato-container {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    /* 4. Ajuste dos ícones e textos */
+    .contato-item {
+        font-size: 0.9rem; /* Fonte ligeiramente menor para não quebrar a linha */
+        gap: 10px;
+    }
+
+    .contato-item i {
+        font-size: 1.2rem;
+        width: 30px; /* Reduz a largura do ícone para ganhar espaço pro texto */
+    }
+
+    /* 5. Ajuste da seção de Redes Sociais */
+    .social-container {
+        gap: 15px;
+    }
+
+    .social-item i {
+        font-size: 1.3rem; /* Ícones um pouco menores */
+    }
+
+    /* 6. Ajuste do Título */
+    h1, .title-sobre {
+        font-size: 1.3rem;
+    }
+
+    /* 7. Ajuste do Rodapé */
+    .site-footer {
         flex-direction: column;
-    }
-
-    /* Reduz o tamanho das fontes para não estourarem a tela */
-    h1 { font-size: 2rem !important; }
-    
-    /* Centraliza os elementos na coluna */
-    .info-contato, .formulario {
-        width: 100%;
+        gap: 15px;
+        padding: 15px;
         text-align: center;
     }
 }
