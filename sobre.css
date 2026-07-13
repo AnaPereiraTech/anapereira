@@ -252,3 +252,28 @@ p {
 
   color: white;
 }
+
+/* Para telas menores que 768px (Celulares) */
+@media (max-width: 768px) {
+    
+    /* Faz o formulário e contatos ficarem um embaixo do outro */
+    .contato-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 5%;
+    }
+
+    /* Ajusta o vídeo e o texto das páginas de projeto */
+    .conteudo-projeto {
+        flex-direction: column;
+    }
+
+    /* Reduz o tamanho das fontes para não estourarem a tela */
+    h1 { font-size: 2rem !important; }
+    
+    /* Centraliza os elementos na coluna */
+    .info-contato, .formulario {
+        width: 100%;
+        text-align: center;
+    }
+}
