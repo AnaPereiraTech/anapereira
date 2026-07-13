@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "text"; /* Nome mais descritivo */
+
+  src: url("font text/CreatoDisplay-Medium.otf");
+
+  font-weight: 500; /* Medium geralmente equivale a 500 */
+
+  font-style: normal;
+
+  font-display: swap; /* Melhora a performance de carregamento */
+}
+
+@font-face {
+  font-family: "title";
+
+  src: url("font title/CreatoDisplay-Medium.otf");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+:root {
+  --dourado: rgb(170, 140, 85);
+
+  --marfim: rgb(245, 242, 235);
+
+  --cinza: rgb(40, 40, 40);
+
+  --fonte-titulo: "title";
+
+  --fonte-corpo: "text";
+}
+
+body {
+  background-color: var(--marfim);
+
+  color: var(--cinza);
+
+  font-family: var(--fonte-corpo);
+
+  line-height: 1.6;
+
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+
+  padding: 30px 10%;
+
+  background-color: var(--marfim);
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+
+  font-size: 1.8rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  color: var(--dourado);
+}
+
+.navbar ul {
+  display: flex;
+
+  list-style: none;
+
+  gap: 40px;
+
+  margin: 0 auto; /* Centraliza o menu */
+
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+
+  color: var(--cinza);
+
+  font-family: var(--fonte-titulo);
+
+  font-size: 1.2rem;
+
+  padding-bottom: 5px;
+
+  transition: all 0.3s ease;
+}
+
+/* Tipografia Elegante */
+
+h1,
+h2,
+h3,
+.logo {
+  font-family: var(--fonte-titulo);
+
+  color: var(--dourado);
+
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 0.5px;
+}
+
+/* Animações Globais */
+
+.anim {
+  transition: all 0.4s ease;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.anim:hover {
+  transform: translateY(-5px);
+
+  color: var(--dourado);
+}
+
+/* Hero Section */
+
+.hero-container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 60px;
+
+  padding: 80px 10%;
+}
+
+.sobre-mim {
+    padding: 10px 10%;
+    background-color: #faf9f6; /* Cor de fundo clara */
+}
+
+.title-sobre {
+    text-align: center; /* Centraliza o texto */
+  font-size: 2rem; /* Ajuste o tamanho conforme preferir */
+  color: #5a5040; /* Cor do texto */
+  position: relative; /* Necessário para posicionar a linha */
+  display: inline-block; /* Faz o elemento ter apenas a largura do texto */
+  left: 50%; /* Técnicas de centralização */
+  transform: translateX(-50%);
+  cursor: default;
+}
+.content-wrapper {
+    display: flex;
+    gap: 40px;            /* Espaço entre imagem e texto */
+    align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
+    padding: 0 5%;
+}
+
+.image-box {
+    flex: 0 0 50%;        /* Define que a imagem ocupará 50% fixos */
+}
+
+.image-box img {
+    width: 100%;          /* A imagem preenche todo o espaço do box (50% da tela) */
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;    /* Mantém a proporção sem distorcer */
+}
+
+.text-box {
+    flex: 0 0 50%;        /* Define que o texto ocupará 50% fixos */
+}
+
+.text-box h3 {
+    font-size: 2rem;
+    color: #5a5040;
+    margin-bottom: 20px;
+    border-left: 3px solid #b89f7a;
+    padding-left: 15px;
+}
+
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid #e0dcd5;
+    padding-top: 20px;
+}
+
+.time-item {
+    text-align: center;
+}
+
+.time-item i {
+    color: #b89f7a;
+    margin-bottom: 10px;
+}
+
+.time-item h4 {
+    margin: 5px 0;
+    color: #5a5040;
+}
+
+.site-footer {
+  display: flex;
+
+  justify-content: space-between; /* Empurra cada item para uma ponta */
+
+  align-items: center;
+
+  padding: 20px 50px; /* Ajuste o espaçamento lateral conforme seu layout */
+
+  border-top: 1px solid #e0dcd5; /* Linha fina superior */
+
+  color: #5a5040;
+
+  font-family: sans-serif;
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+.footer-button {
+  padding: 8px 25px;
+
+  border: 1px solid #b89f7a; /* Cor da borda */
+
+  border-radius: 20px; /* Arredondamento do botão */
+
+  color: #5a5040;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+
+.footer-button:hover {
+  background-color: #b89f7a;
+
+  color: white;
+}

@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "text"; /* Nome mais descritivo */
+
+  src: url("font text/CreatoDisplay-Medium.otf");
+
+  font-weight: 500; /* Medium geralmente equivale a 500 */
+
+  font-style: normal;
+
+  font-display: swap; /* Melhora a performance de carregamento */
+}
+
+@font-face {
+  font-family: "title";
+
+  src: url("font title/CreatoDisplay-Medium.otf");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+:root {
+  --dourado: rgb(170, 140, 85);
+
+  --marfim: rgb(245, 242, 235);
+
+  --cinza: rgb(40, 40, 40);
+
+  --fonte-titulo: "title";
+
+  --fonte-corpo: "text";
+}
+
+body {
+  background-color: var(--marfim);
+
+  color: var(--cinza);
+
+  font-family: var(--fonte-corpo);
+
+  line-height: 1.6;
+
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+
+  padding: 30px 10%;
+
+  background-color: var(--marfim);
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+
+  font-size: 1.8rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  color: var(--dourado);
+}
+
+.navbar ul {
+  display: flex;
+
+  list-style: none;
+
+  gap: 40px;
+
+  margin: 0 auto; /* Centraliza o menu */
+
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+
+  color: var(--cinza);
+
+  font-family: var(--fonte-titulo);
+
+  font-size: 1.2rem;
+
+  padding-bottom: 5px;
+
+  transition: all 0.3s ease;
+}
+
+/* Tipografia Elegante */
+
+h1,
+h2,
+h3,
+.logo {
+  font-family: var(--fonte-titulo);
+
+  color: var(--dourado);
+
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 0.5px;
+}
+
+/* Animações Globais */
+
+.anim {
+  transition: all 0.4s ease;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.title-sobre {
+  font-family: var(--fonte-titulo);
+
+  font-size: 2.5rem;
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  color: var(--dourado);
+}
+.anim:hover {
+  transform: translateY(-5px);
+
+  color: var(--dourado);
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.projeto-card {
+    display: flex;      
+    padding: 10px;      /* Ativa o Flexbox */
+    flex-direction: column;   /* Organiza os itens um abaixo do outro */
+    align-items: center;      /* Centraliza horizontalmente */
+    text-align: center;       /* Garante que o texto dentro dos elementos também centralize */
+    text-decoration: none;
+    color: #5a5040;
+    transition: transform 0.4s ease;
+}
+
+/* Opcional: Se você quiser que o título ocupe todo o espaço disponível antes do botão */
+.projeto-card h3 {
+    margin: 15px 0;           /* Espaçamento superior e inferior */
+}
+
+/* Efeito ao passar o cursor */
+.projeto-card:hover {
+  transform: translateY(-10px); /* Leve efeito de subir */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+.projeto-card img {
+  width: 100%;
+  display: block;
+}
+
+.btn-saber-mais {
+    display: inline-block;
+    border: 1px solid #b89f7a;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-saber-mais:hover {
+  background-color: #b89f7a;
+  color: white;
+}
+
+.site-footer {
+  display: flex;
+
+  justify-content: space-between; /* Empurra cada item para uma ponta */
+
+  align-items: center;
+
+  padding: 20px 50px; /* Ajuste o espaçamento lateral conforme seu layout */
+
+  border-top: 1px solid #e0dcd5; /* Linha fina superior */
+
+  color: #5a5040;
+
+  font-family: sans-serif;
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+.footer-button {
+  padding: 8px 25px;
+
+  border: 1px solid #b89f7a; /* Cor da borda */
+
+  border-radius: 20px; /* Arredondamento do botão */
+
+  color: #5a5040;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+
+.footer-button:hover {
+  background-color: #b89f7a;
+
+  color: white;
+}

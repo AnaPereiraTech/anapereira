@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "text"; /* Nome mais descritivo */
+
+  src: url("font text/CreatoDisplay-Medium.otf");
+
+  font-weight: 500; /* Medium geralmente equivale a 500 */
+
+  font-style: normal;
+
+  font-display: swap; /* Melhora a performance de carregamento */
+}
+
+@font-face {
+  font-family: "title";
+
+  src: url("font title/CreatoDisplay-Medium.otf");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+:root {
+  --dourado: rgb(170, 140, 85);
+
+  --marfim: rgb(245, 242, 235);
+
+  --cinza: rgb(40, 40, 40);
+
+  --fonte-titulo: "title";
+
+  --fonte-corpo: "text";
+}
+
+body {
+  background-color: var(--marfim);
+
+  color: var(--cinza);
+
+  font-family: var(--fonte-corpo);
+
+  line-height: 1.6;
+
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+
+  padding: 30px 10%;
+
+  background-color: var(--marfim);
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+
+  font-size: 1.8rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  color: var(--dourado);
+}
+
+.navbar ul {
+  display: flex;
+
+  list-style: none;
+
+  gap: 40px;
+
+  margin: 0 auto; /* Centraliza o menu */
+
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+
+  color: var(--cinza);
+
+  font-family: var(--fonte-titulo);
+
+  font-size: 1.2rem;
+
+  padding-bottom: 5px;
+
+  transition: all 0.3s ease;
+}
+
+/* Tipografia Elegante */
+
+h1,
+h2,
+h3,
+.logo {
+  font-family: var(--fonte-titulo);
+
+  color: var(--dourado);
+
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 0.5px;
+}
+
+/* Animações Globais */
+
+.anim {
+  transition: all 0.4s ease;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.anim:hover {
+  transform: translateY(-5px);
+
+  color: var(--dourado);
+}
+
+.projeto-page {
+    padding: 80px 10%;
+    background-color: #f5f2eb; /* Marfim */
+}
+
+.header-projeto {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-projeto h1 {
+    color: #aa8c55; /* Dourado */
+    font-size: 3rem;
+}
+
+.conteudo-projeto {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.video-box, .texto-projeto {
+    flex: 1;
+}
+
+.texto-projeto h3 {
+    color: #5a5040;
+    margin-bottom: 20px;
+    border-left: 3px solid #aa8c55;
+    padding-left: 15px;
+}
+
+.conectar-container {
+  text-align: center;
+
+  padding: 60px 20px;
+}
+
+.social-container {
+  display: flex;
+
+  justify-content: center; /* Centraliza horizontalmente */
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin: 50px auto; /* Centraliza o próprio container na página */
+
+  width: 100%;
+}
+
+.social-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-decoration: none;
+
+  color: #5a5040;
+}
+
+.social-item i {
+  font-size: 32px; /* Tamanho do ícone */
+
+  color: #b89f7a; /* Cor dourada do ícone */
+
+  margin-bottom: 8px;
+}
+
+/* Efeito ao passar o mouse */
+
+.social-item:hover {
+  opacity: 0.8;
+}
+
+.site-footer {
+  display: flex;
+
+  justify-content: space-between; /* Empurra cada item para uma ponta */
+
+  align-items: center;
+
+  padding: 20px 50px; /* Ajuste o espaçamento lateral conforme seu layout */
+
+  border-top: 1px solid #e0dcd5; /* Linha fina superior */
+
+  color: #5a5040;
+
+  font-family: sans-serif;
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+.footer-button {
+  padding: 8px 25px;
+
+  border: 1px solid #b89f7a; /* Cor da borda */
+
+  border-radius: 20px; /* Arredondamento do botão */
+
+  color: #5a5040;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+
+.footer-button:hover {
+  background-color: #b89f7a;
+
+  color: white;
+}
